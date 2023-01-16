@@ -28,13 +28,30 @@
 //    echo  "<img src='img/".$aap.".jpg'>";
 //}
 
-//6
-if ($_POST['email']==='piet@worldonline.nl'&& $_POST['wachtwoord']==='doetje123'){
-    echo 'Welkom';
-}if ($_POST['email']==='klaas@carpets.nl'&& $_POST['wachtwoord']==='snoepje777'){
-    echo 'Welkom' ;
-}if ($_POST['email']==='truushendriks@wegweg.nl'&&$_POST['wachtwoord']==='arkiearkie201') {
-    echo 'Welkom';
-}else{
-    echo 'Sorry,Geen toegang';
-}
+////6
+//if ($_POST['email']==='piet@worldonline.nl'&& $_POST['wachtwoord']==='doetje123'){
+//    echo 'Welkom';
+//}if ($_POST['email']==='klaas@carpets.nl'&& $_POST['wachtwoord']==='snoepje777'){
+//    echo 'Welkom' ;
+//}if ($_POST['email']==='truushendriks@wegweg.nl'&&$_POST['wachtwoord']==='arkiearkie201') {
+//    echo 'Welkom';
+//}else{
+//    echo 'Sorry,Geen toegang';
+//}
+
+//7
+
+//function logEmail(){
+//    if ($_POST['email'] === 'piet@worldonline.nl' && $_POST['wachtwoord'] === 'doetje123') {
+//        return true;
+//    }elseif ($_POST['email'] !== 'piet@worldonline.nl' && $_POST['wachtwoord'] !== 'doetje123'){
+//        return false;
+//    }
+//
+//}
+//
+//if(logEmail($_POST['email']&&$_POST['wachtwoord']==true)){
+//    echo 'Logged in!';
+//}else{
+//    echo 'Try again';
+//}
