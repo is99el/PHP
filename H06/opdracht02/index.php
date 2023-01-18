@@ -27,7 +27,7 @@ $user = $stmt->fetch();
 if ($user) {
     echo 'Welkom';
 } else {
-    echo 'Sorry, geen toegang!';
+    echo 'Sorry,geen toegang!';
 
 }
 
