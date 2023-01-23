@@ -5,6 +5,7 @@ if (isset($_SESSION["user"])){
     echo "<p><a href='login.php'>login</a></p>";
 
 }else{
+    echo "Gebruikersnaam of wachtword kloppen niet.";
 header('location:login.php');
 }
 

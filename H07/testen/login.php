@@ -2,9 +2,9 @@
 session_start();
 
 $users=array(
-    'ismael'=>array('pwd'=>'0000','rol'=>'Admin'),
-    'rick'=>array('pwd'=>'0000','rol'=>'Gebruiker'),
-     'piet'=>array('pwd'=>'0000','rol'=>'Admin')
+    'ismael'=>array('pwd'=>'1234','rol'=>'Admin'),
+    'rick'=>array('pwd'=>'4321','rol'=>'Gebruiker'),
+     'piet'=>array('pwd'=>'4213','rol'=>'Admin')
 );
 if(isset($_POST['knop'])){
     $_SESSION=array();
