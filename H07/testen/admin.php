@@ -1,7 +1,10 @@
 <?php
 session_start();
-if($_SESSION["user"] && $_SESSION["user"]["rol"]=="Admin"){
-    echo "<h1>Welkom ".$_SESSION["user"]. " op het admingedeelte van de website";
+if(isset($_SESSION["user"]) && $_SESSION["user"]["rol"]=="Administrator"){
+    echo "<h1>Welkom ".$_SESSION["user"]['naam']. " op het admingedeelte van de website";
+    echo "<p><a href='login.php'>login</a></p>";
 }else{
-    header('location: login.php');
+    echo "Je bent geen administrator";
+    echo "<p><a href='login.php'>login</a></p>";
+
 }

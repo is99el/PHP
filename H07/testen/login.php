@@ -2,11 +2,11 @@
 session_start();
 
 $users=array(
-    'ismael'=>array('pwd'=>'1234','rol'=>'Admin'),
+    'ismael'=>array('pwd'=>'1234','rol'=>'Administrator'),
     'rick'=>array('pwd'=>'4321','rol'=>'Gebruiker'),
-     'piet'=>array('pwd'=>'4213','rol'=>'Admin')
+     'piet'=>array('pwd'=>'4213','rol'=>'Administrator')
 );
-if(isset($_POST['knop'])){
+if(isset($_POST['loguit'])){
     $_SESSION=array();
     session_destroy();
 }
@@ -17,7 +17,7 @@ if (isset($_POST['knop'])
                             "pwd"=>$users[$_POST["login"]]["pwd"],
                             "rol"=>$users[$_POST["login"]]["rol"]
         );
-    $message="Welkom".$_SESSION["user"]["naam"]." met de rol ".$_SESSION["user"]["rol"];
+    $message="Welkom ".$_SESSION["user"]["naam"]." met de rol ".$_SESSION["user"]["rol"];
 }else{
     $message='Inloggen';
 }
