@@ -4,7 +4,7 @@
 //print_r($_GET);
 
 //2,3
-//if ($_POST['voornaam']==''){
+//if ($_POST['']==''){
 //    echo 'je moet een voornaam invullen</br>';
 //    echo "<a href=\"formulier.html\">terug naar het formulier</br></a>";
 //};
