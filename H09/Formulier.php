@@ -144,6 +144,8 @@ $query="SELECT * FROM broodjes";
 $stmt=$con->prepare($query)or die("error1.");
 $stmt->execute() or die ("error 2.");
 
+$query = "UPDATE broodjes SET idBroodjes='' WHERE idBroodjes=''";
+$con->exec($query);
 
 
 while($row=$stmt->fetch()) {
