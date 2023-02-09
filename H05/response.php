@@ -28,16 +28,16 @@
 //    echo  "<img src='img/".$aap.".jpg'>";
 //}
 
-////6
-//if ($_POST['email']==='piet@worldonline.nl'&& $_POST['wachtwoord']==='doetje123'){
-//    echo 'Welkom';
-//}if ($_POST['email']==='klaas@carpets.nl'&& $_POST['wachtwoord']==='snoepje777'){
-//    echo 'Welkom' ;
-//}if ($_POST['email']==='truushendriks@wegweg.nl'&&$_POST['wachtwoord']==='arkiearkie201') {
-//    echo 'Welkom';
-//}else{
-//    echo 'Sorry,Geen toegang';
-//}
+//6
+$username=$_POST['email'];
+$password=$_POST['wachtwoord'];
+
+if ($username == 'piet@worldonline.nl' && $password == 'doetje123' || $username == "klaas@carpets.nl" && $password == "snoepje777" || $username == "truushendriks@wegweg.nl" && $password == "arkiearkie201") {
+    echo "Welkom, je bent ingelogd!";
+} else {
+    echo "Sorry, geen toegang :(";
+}
+
 
 //7
 

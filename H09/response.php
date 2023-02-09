@@ -1,10 +1,4 @@
 <?php
-
-
-
-
-
-//2,3
 if ($_POST['broodje']==''){
     echo 'je moet een broodje invullen</br>';
     echo "<a href=\"Formulier.php\">terug naar het formulier</br></a>";

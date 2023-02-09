@@ -153,6 +153,7 @@ while($row=$stmt->fetch()) {
     echo "<td>" . $row['idBroodjes'] . "</td>";
     echo "</tr>";
 }
+
 ?>
 </table>
 </div>
